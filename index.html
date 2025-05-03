@@ -18,7 +18,7 @@
 <body>
     <header class="header">
 
-        <div class="container">
+        <div class="container header-container">
             <nav class="navigation">
                 <a class="logo header-logo" href="./index.html">Web<span class="studio">Studio</span></a>
                 <ul class="menu">
@@ -39,48 +39,51 @@
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu is-open hidden">
-            <div class="container mobile-menu-container ">
-                <button type="button" class="mobile-menu-button">a</button>
+        <div class="mobile-menu ">
+            <div class="container mobile-menu-container">
+                <button type="button" class="mobile-menu-button"><svg class="mobile-close-button-icon" width="8"
+                        height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg></button>
                 <nav class="mobile-menu-navigation">
-                    <ul class="menu">
-                        <li><a href="./index.html" class="navigation-link is-active">Studio</a></li>
-                        <li><a href="" class="navigation-link">Portfolio</a></li>
-                        <li><a href="" class="navigation-link">Contacts</a></li>
+                    <ul class="mobile-nav-list">
+                        <li><a href="./index.html" class="mobile-navigation-link is-active">Studio</a></li>
+                        <li><a href="" class="mobile-navigation-link">Portfolio</a></li>
+                        <li><a href="" class="mobile-navigation-link">Contacts</a></li>
                     </ul>
                 </nav>
-                <address class="navigation-address">
-                    <ul class="navigation-address-list">
-                        <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                        <li><a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a></li>
+                <address class="mobile-navigation-address">
+                    <ul class="mobile-navigation-address-list">
+                        <li><a href="mailto:info@devstudio.com" class="mobile-contacts">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="mobile-contacts">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
 
-                <ul class="team-link-list">
-                    <li class="team-link-container">
-                        <a class="team-link" href="https://www.instagram.com/mark.guerrero.520/">
-                            <svg class="team-icon" width="16" height="16">
+                <ul class="mobile-team-link-list">
+                    <li class="mobile-team-link-container">
+                        <a class="mobile-team-link" href="https://www.instagram.com/mark.guerrero.520/">
+                            <svg class="mobile-team-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-link-container">
-                        <a class="team-link" href="https://www.instagram.com/mark.guerrero.520/">
-                            <svg class="team-icon" width="16" height="16">
+                    <li class="mobile-team-link-container">
+                        <a class="mobile-team-link" href="https://www.instagram.com/mark.guerrero.520/">
+                            <svg class="mobile-team-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-link-container">
-                        <a class="team-link" href="https://www.instagram.com/mark.guerrero.520/">
-                            <svg class="team-icon" width="16" height="16">
+                    <li class="mobile-team-link-container">
+                        <a class="mobile-team-link" href="https://www.instagram.com/mark.guerrero.520/">
+                            <svg class="mobile-team-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="team-link-container">
-                        <a class="team-link" href="https://www.instagram.com/mark.guerrero.520/">
-                            <svg class="team-icon" width="16" height="16">
+                    <li class="mobile-team-link-container">
+                        <a class="mobile-team-link" href="https://www.instagram.com/mark.guerrero.520/">
+                            <svg class="mobile-team-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -332,7 +335,9 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img3.jpg" alt="Banking App" width="360">
+                            <img srcset="./images/photos/img3.jpg 1x,
+                            ./images/photos/img3@2x.jpg 2x" src="./images/photos/img3.jpg" alt="Banking App"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -346,7 +351,9 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img6.jpg" alt="Cashless Payment" width="360">
+                            <img srcset="./images/photos/img6.jpg 1x,
+                            ./images/photos/img6@2x.jpg 2x" src="./images/photos/img6.jpg" alt="Cashless Payment"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -360,7 +367,9 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img5.jpg" alt="Meditation App" width="360">
+                            <img srcset="./images/photos/img5.jpg 1x,
+                            ./images/photos/img5@2x.jpg 2x" src="./images/photos/img5.jpg" alt="Meditation App"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -374,7 +383,9 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img4.jpg" alt="Taxi Service" width="360">
+                            <img srcset="./images/photos/img4.jpg 1x,
+                            ./images/photos/img4@2x.jpg 2x" src="./images/photos/img4.jpg" alt="Taxi Service"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -388,7 +399,9 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img2.jpg" alt="Screen Illustrations" width="360">
+                            <img srcset="./images/photos/img2.jpg 1x,
+                            ./images/photos/img2@2x.jpg 2x" src="./images/photos/img2.jpg" alt="Screen Illustrations"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -402,7 +415,9 @@
                     </li>
                     <li class="portfolio-card">
                         <div class="overlay-container">
-                            <img src="./images/photos/img1.jpg" alt="Girl using phone" width="360">
+                            <img srcset="./images/photos/img1.jpg 1x,
+                            ./images/photos/img1@2x.jpg 2x" src="./images/photos/img1.jpg" alt="Girl using phone"
+                                width="360">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                                 App · Exotic Fruit Ecommerce App ·
@@ -543,7 +558,7 @@
                     <input class="form-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true"
                         name="user-privacy" />
                     <label class="form-condition" for="user-privacy"><span class="form-span">
-                            <svg class="form-input-icon" width="10" height="8">
+                            <svg class="form-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
 
