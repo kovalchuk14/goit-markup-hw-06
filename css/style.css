@@ -293,7 +293,7 @@ section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/banner-background/pc1x.jpg);
-        max-width: 1158px;
+        max-width: 1440px;
     }
 
     @media (min-resolution: 2x) {
